@@ -18,9 +18,16 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         $password = htmlspecialchars($_POST["password"]);
 
 		// Force user connection to access dashboard
-		userConnection($db, $email, md5($password));
-		
-		header('Location: dashboard.php');
+		$connection = userConnection($db, $email, md5($password));
+
+        if($connection){
+            header('Location: dashboard.php');
+        }
+        else{
+            $error = 'Identifiants incorrects !';
+        }
+
+
 
 	}else{
 		$error = 'Champs requis !';
