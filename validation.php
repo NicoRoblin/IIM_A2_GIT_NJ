@@ -23,8 +23,7 @@ if(	isset($_POST['username']) && isset($_POST['email'])&& isset($_POST['email2']
             if ($email == $email2){
 
                 $password = md5($password);
-	            $req=$db->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
-                $req->execute(array("username"=>$username, "email"=>$email, "password"=>$password));
+	            userRegistration($db, $username, $email, $password);
                 header('Location: login.php');
 
 	        }else{
