@@ -60,11 +60,12 @@ SUMMARY
 	function userConnection(PDO $db, $email, $password){
 		if(!empty($email) && !empty($password)){
 			//Requête SQL
-			$sql = "SELECT * FROM users WHERE email = :email AND password = :password LIMIT 1";
+			$sql = "SELECT * FROM users WHERE email = :email OR username = :username AND password = :password LIMIT 1";
 
 			$req = $db->prepare($sql);
 			$req->execute(array(
 				':email' => $email,
+                ':username' => $email,
 				':password' => $password
 			));
 
