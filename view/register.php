@@ -35,6 +35,7 @@
 						<input type="submit" value="Je m'inscris !">	
 					</div>
 					<p class="account">Vous avez un compte ? <a href="login.php">Connectez-vous !</a></p>
+					<p class="account">Suivez nous sur <a href="https://www.facebook.com/groups/293834574317011/?fref=ts" target="_blank">Facebook !</a></p>
 				</form>
 			</div>
 		</div>
