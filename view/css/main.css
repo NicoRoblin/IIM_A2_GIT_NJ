@@ -92,12 +92,12 @@ input:focus {
 	width: 100%;
 	font-size: 11px;
 	text-transform: uppercase;
-	background-color: #f50;
+	background-color: #8c7373;
 	padding: 10px;
 }
 
 #logbox.register .form-submit input[type="submit"] {
-	background-color: #f50;
+	background-color: #8c7373;
 }
 
 #logbox .form-submit input[type="submit"]:active {
@@ -212,15 +212,15 @@ p.account a {
 }
 
 .music:hover{
-	border: solid 1px #f50;
+	border: solid 1px #8c7373;
 }
 
 .music.playing {
-	border: solid 1px #f50;
+	border: solid 1px #8c7373;
 }
 
 .music.playing h3{
-	color: #f50;
+	color: #8c7373;
 	font-weight: bold;
 }
 
