@@ -26,7 +26,7 @@ if(	isset($_POST['username']) && isset($_POST['email'])&& isset($_POST['email2']
 	            $req=$db->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
                 $req->execute(array("username"=>$username, "email"=>$email, "password"=>$password));
                 header('Location: login.php');
-                
+
 	        }else{
 
                 $_SESSION['message'] = 'Erreur : Vos emails ne sont pas identiques !';

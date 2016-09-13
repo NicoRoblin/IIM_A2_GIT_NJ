@@ -14,10 +14,11 @@ require('model/functions.fn.php');
 if(isset($_POST['email']) && isset($_POST['password'])){
 	if(!empty($_POST['email']) && !empty($_POST['password'])){
 
-	    // TODO
+	    $email = htmlspecialchars($_POST["email"]);
+        $password = htmlspecialchars($_POST["password"]);
 
 		// Force user connection to access dashboard
-		userConnection($db, 'git@initiation.com', 'password');
+		userConnection($db, $email, md5($password));
 		
 		header('Location: dashboard.php');
 
