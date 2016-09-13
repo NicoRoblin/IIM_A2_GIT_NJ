@@ -411,3 +411,14 @@ p.account a {
 	font-family: monospace;
 	font-size: 10px; /* reduced font size */
 }
+.welcome{
+	color: white;
+	float: left;
+	margin: 0 0 0 0;
+	font-size: 1.2em;
+	-webkit-transform: translateY(50%);
+	-moz-transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	-o-transform: translateY(50%);
+	transform: translateY(50%);
+}
