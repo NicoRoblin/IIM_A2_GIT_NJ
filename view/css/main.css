@@ -169,8 +169,8 @@ p.account a {
 
 #topbar a.btn {
 	border: none;
-	background-color: #f50;
-	border: solid 1px #F50;
+	background-color: #8c7373;
+	border: solid 1px #8c7373;
 	float: right;
 	line-height: 25px;
 	color:white;
@@ -183,8 +183,8 @@ p.account a {
 
 #topbar a.btn:hover {
 	background-color: #fff;
-	color: #F50;
-	border: solid 1px #F50;
+	color: #8c7373;
+	border: solid 1px #8c7373;
 	text-decoration: none;
 }
 
