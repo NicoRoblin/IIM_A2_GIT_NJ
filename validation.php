@@ -12,12 +12,10 @@ if(	isset($_POST['username']) && isset($_POST['email'])&& isset($_POST['email2']
 	$password = htmlspecialchars($_POST["password"]);
     $password2 = htmlspecialchars($_POST["password2"]);
 
-	$req=$db->prepare("SELECT id FROM users WHERE username LIKE :username OR email LIKE :email");
-	$req->execute(array("username"=>$username, "email"=>$email));
+    $usernameok = isUsernameAvailable($db, $username);
+    $emailok = isEmailAvailable($db, $email);
 
-	$members=$req->fetchAll();
-
-	if(sizeof($members) == 0){
+    if($usernameok AND $emailok){
 
 	    if ($password == $password2){
             if ($email == $email2){
