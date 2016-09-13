@@ -22,14 +22,17 @@ if(	isset($_POST['username']) && isset($_POST['email'])&& isset($_POST['email2']
 	    if ($password == $password2){
             if ($email == $email2){
 
+                $password = md5($password);
 	            $req=$db->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
                 $req->execute(array("username"=>$username, "email"=>$email, "password"=>$password));
                 header('Location: login.php');
+                
 	        }else{
+
                 $_SESSION['message'] = 'Erreur : Vos emails ne sont pas identiques !';
                 header('Location: register.php');
             }
-            
+
 	    }else{
             $_SESSION['message'] = 'Erreur : Vos mots de passe ne sont pas identiques !';
             header('Location: register.php');
