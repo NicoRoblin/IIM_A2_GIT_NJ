@@ -26,7 +26,7 @@ if(	isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
             $_SESSION['message'] = 'Erreur : Vos mots de passe ne sont pas identiques !';
             header('Location: register.php');
         }
-        
+
     }else{
         $_SESSION['message'] = 'Erreur : Votre username ou votre email existe déjà !';
         header('Location: register.php');
