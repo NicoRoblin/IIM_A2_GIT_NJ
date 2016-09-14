@@ -1,5 +1,5 @@
 body {
-	background-color: grey;
+	background-color: #EEF0EE;
 }
 
 input:focus {
@@ -92,12 +92,12 @@ input:focus {
 	width: 100%;
 	font-size: 11px;
 	text-transform: uppercase;
-	background-color: #32EB25;
+	background-color: #6EDD66;
 	padding: 10px;
 }
 
 #logbox.register .form-submit input[type="submit"] {
-	background-color: #32EB25;
+	background-color: #6EDD66;
 }
 
 #logbox .form-submit input[type="submit"]:active {
@@ -169,8 +169,8 @@ p.account a {
 
 #topbar a.btn {
 	border: none;
-	background-color: #32EB25;
-	border: solid 1px #32EB25;
+	background-color: #6EDD66;
+	border: solid 1px #6EDD66;
 	float: right;
 	line-height: 25px;
 	color:white;
@@ -183,8 +183,8 @@ p.account a {
 
 #topbar a.btn:hover {
 	background-color: #fff;
-	color: #32EB25;
-	border: solid 1px #32EB25;
+	color: #6EDD66;
+	border: solid 1px #6EDD66;
 	text-decoration: none;
 }
 
@@ -203,7 +203,7 @@ p.account a {
 .music,
 .block {
 	padding: 30px;
-	background-color: #fff;
+	background-color: white;
 	margin-top: 20px;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -212,15 +212,15 @@ p.account a {
 }
 
 .music:hover{
-	border: solid 1px #32EB25;
+	border: solid 1px black;
 }
 
 .music.playing {
-	border: solid 1px #32EB25;
+	border: solid 1px black;
 }
 
 .music.playing h3{
-	color: #32EB25;
+	color: black;
 	font-weight: bold;
 }
 
