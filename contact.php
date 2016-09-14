@@ -6,5 +6,5 @@ require('model/functions.fn.php');
 
 
 include 'view/_header.php';
-include 'view/edit_image.php';
+include 'view/contact.php';
 include 'view/_footer.php';
