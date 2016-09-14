@@ -92,12 +92,12 @@ input:focus {
 	width: 100%;
 	font-size: 11px;
 	text-transform: uppercase;
-	background-color: #8c7373;
+	background-color: #32EB25;
 	padding: 10px;
 }
 
 #logbox.register .form-submit input[type="submit"] {
-	background-color: #8c7373;
+	background-color: #32EB25;
 }
 
 #logbox .form-submit input[type="submit"]:active {
@@ -169,8 +169,8 @@ p.account a {
 
 #topbar a.btn {
 	border: none;
-	background-color: #8c7373;
-	border: solid 1px #8c7373;
+	background-color: #32EB25;
+	border: solid 1px #32EB25;
 	float: right;
 	line-height: 25px;
 	color:white;
@@ -183,8 +183,8 @@ p.account a {
 
 #topbar a.btn:hover {
 	background-color: #fff;
-	color: #8c7373;
-	border: solid 1px #8c7373;
+	color: #32EB25;
+	border: solid 1px #32EB25;
 	text-decoration: none;
 }
 
@@ -212,15 +212,15 @@ p.account a {
 }
 
 .music:hover{
-	border: solid 1px #8c7373;
+	border: solid 1px #32EB25;
 }
 
 .music.playing {
-	border: solid 1px #8c7373;
+	border: solid 1px #32EB25;
 }
 
 .music.playing h3{
-	color: #8c7373;
+	color: #32EB25;
 	font-weight: bold;
 }
 
