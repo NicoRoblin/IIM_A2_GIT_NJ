@@ -1,5 +1,9 @@
 <?php
 
+require('config/config.php');
+require('model/functions.fn.php');
+session_start();
+
 if(isset($_POST['email'])) {
 
 
@@ -34,7 +38,7 @@ if(isset($_POST['email'])) {
 
     // validation expected data exists
 
-    if(!isset($_POST['first_name']) ||
+    if(!isset($_POST['username']) ||
 
         !isset($_POST['email']) ||
 
@@ -46,9 +50,7 @@ if(isset($_POST['email'])) {
 
 
 
-    $first_name = $_POST['first_name']; // required
-
-    $last_name = $_POST['last_name']; // required
+    $first_name = $_POST['username']; // required
 
     $email_from = $_POST['email']; // required
 
@@ -70,15 +72,10 @@ if(isset($_POST['email'])) {
 
     if(!preg_match($string_exp,$first_name)) {
 
-        $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+        $error_message .= 'The Username you entered does not appear to be valid.<br />';
 
     }
 
-    if(!preg_match($string_exp,$last_name)) {
-
-        $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-
-    }
 
     if(strlen($comments) < 2) {
 
@@ -108,11 +105,7 @@ if(isset($_POST['email'])) {
 
     $email_message .= "First Name: ".clean_string($first_name)."\n";
 
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-
     $email_message .= "Email: ".clean_string($email_from)."\n";
-
-    $email_message .= "Telephone: ".clean_string($telephone)."\n";
 
     $email_message .= "Comments: ".clean_string($comments)."\n";
 
@@ -138,7 +131,7 @@ if(isset($_POST['email'])) {
 
 
 
-    Thank you for contacting us. We will be in touch with you very soon.
+    Merci de nous avoir contacté, nous vous répondrons dès que possible.
 
 
 
