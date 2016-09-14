@@ -6,11 +6,11 @@
             <div id="musicfeed">
                 <h1><i class="fa fa-pencil"></i> Contactez nous !</h1>
 
-                            <form id="form" class="topBefore">
+                            <form id="form" class="topBefore" method="post" name="contactform" action="send_form_email.php">
 
                                 <input name="name" class="input" id="name" type="text" placeholder="USERNAME">
                                 <input name="email" class="input" id="email" type="text" placeholder="E-MAIL">
-                                <textarea name="comment" id="message" type="text" placeholder="MESSAGE"></textarea>
+                                <textarea name="comments" id="message" placeholder="MESSAGE"></textarea>
                                 <input class="input" id="submit" type="submit" value="GO!">
 
                             </form>
@@ -18,8 +18,8 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
+
 <?php
 include '_footer.php';
 ?>
