@@ -8,9 +8,9 @@
 
                             <form id="form" class="topBefore">
 
-                                <input class="input" id="name" type="text" placeholder="USERNAME">
-                                <input class="input" id="email" type="text" placeholder="E-MAIL">
-                                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                                <input name="name" class="input" id="name" type="text" placeholder="USERNAME">
+                                <input name="email" class="input" id="email" type="text" placeholder="E-MAIL">
+                                <textarea name="comment" id="message" type="text" placeholder="MESSAGE"></textarea>
                                 <input class="input" id="submit" type="submit" value="GO!">
 
                             </form>
