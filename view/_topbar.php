@@ -10,7 +10,7 @@
 						<a href="logout.php" class="btn">Déconnexion</a>
 						<a href="edit_image.php" class="btn">Mon profil</a>
 						<a href="add_music.php" class="btn"><i class="fa fa-plus"></i> Ajouter une musique</a>
-						<a href="" class="btn"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.facebook.com/groups/293834574317011/?fref=ts" class="btn"><i class="fa fa-facebook"></i></a>
 						<h4 class="welcome">Bienvenue <?php echo $_SESSION["username"] ?> <span>!</span></h4>
 					</div>
 				</div>
