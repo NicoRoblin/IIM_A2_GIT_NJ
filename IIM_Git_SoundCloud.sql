@@ -1,23 +1,17 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.0.2
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
 -- Client :  localhost
--- Généré le :  Ven 02 Octobre 2015 à 13:55
--- Version du serveur :  10.0.21-MariaDB-log
--- Version de PHP :  5.6.13
+-- Généré le :  Mer 14 Septembre 2016 à 15:05
+-- Version du serveur :  5.6.28
+-- Version de PHP :  7.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- Base de données :  `IIM_Git_SoundCloud`
+-- Base de données :  `iim_git_soundcloud`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +34,7 @@ CREATE TABLE `musics` (
 
 INSERT INTO `musics` (`id`, `user_id`, `title`, `file`, `created_at`) VALUES
 (1, 1, 'UN*DEUX - Shopping Day', 'musics/d0dbde0148d66ddf8ae815e014e2a668.1.mp3', '2015-10-01 13:35:05'),
-(2, 1, 'FlicFlac - Can''t Get Away (Bootleg)', 'musics/4baf839a4706fdc8caf286cd35dba410.1.mp3', '2015-10-02 11:41:26');
+(2, 1, 'FlicFlac - Can\'t Get Away (Bootleg)', 'musics/4baf839a4706fdc8caf286cd35dba410.1.mp3', '2015-10-02 11:41:26');
 
 -- --------------------------------------------------------
 
@@ -62,7 +56,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `picture`, `created_at`) VALUES
-(1, 'Git', 'git@initiation.com', 'password', 'view/profil_pic/e8df43b8a90546b15da8591c89711879.1.jpg', '2015-10-01 11:13:46');
+(1, 'Git', 'git@initiation.com', 'password', 'view/profil_pic/e8df43b8a90546b15da8591c89711879.1.jpg', '2015-10-01 11:13:46'),
+(11, 'Nico', 'nico@gmail.com', '410ec15153a6dff0bed851467309bcbd', '', '2016-09-13 17:46:27'),
+(12, 'Niconico', 'niconico@gmail.com', '990f1231beef96e676782e73d7ce8833', '', '2016-09-13 19:13:14');
 
 --
 -- Index pour les tables exportées
@@ -93,7 +89,4 @@ ALTER TABLE `musics`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
