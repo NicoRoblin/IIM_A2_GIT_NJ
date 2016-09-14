@@ -41,6 +41,7 @@
 					</div>
 					<p class="account">Vous avez un compte ? <a href="login.php">Connectez-vous !</a></p>
 					<p class="account">Suivez nous sur <a href="https://www.facebook.com/groups/293834574317011/?fref=ts" target="_blank">Facebook !</a></p>
+					<p class="account">Ou sur <a href="https://twitter.com/soundcloud?lang=en" target="_blank">Twitter !</a></p>
 				</form>
 			</div>
 		</div>
