@@ -26,6 +26,8 @@ if( isset($_FILES['music']) && !empty($_FILES['music']) &&
 			$error = 'Erreur, le fichier n\'a pas une extension autorisée !';
 		}
 	// }
+}else{
+    $error = 'Erreur, veuillez ajouter un titre !';
 }
 
 include 'view/_header.php';
