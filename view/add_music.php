@@ -20,11 +20,11 @@
 								<form action="add_music.php" method="POST" enctype="multipart/form-data">
 									<div class="form-group">
 										<label for="title">Titre</label>
-										<input type="text" name="title" class="form-control">
+										<input type="text" name="title" required="required" class="form-control">
 									</div>
 									<div class="form-group">
 										<label for="file">Musique</label>
-										<input type="file" name="music">
+										<input type="file" required="required" name="music">
 										<p>
 											Extensions autorisées : .mp3, .ogg
 										</p>
