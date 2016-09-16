@@ -6,19 +6,11 @@ session_start();
 
 if(isset($_POST['email'])) {
 
-
-
     // EDIT THE 2 LINES BELOW AS REQUIRED
 
     $email_to = "julien.salliot@devinci.fr";
 
     $email_subject = "Your email subject line";
-
-
-
-
-
-
 
     // validation expected data exists
 
@@ -30,15 +22,11 @@ if(isset($_POST['email'])) {
 
     }
 
-
-
     $first_name = $_POST['username']; // required
 
     $email_from = $_POST['email']; // required
 
     $comments = $_POST['comments']; // required
-
-
 
     $error_message = "";
 
@@ -58,7 +46,6 @@ if(isset($_POST['email'])) {
 
     }
 
-
     if(strlen($comments) < 2) {
 
         $error_message .= 'The Comments you entered do not appear to be valid.<br />';
@@ -66,8 +53,6 @@ if(isset($_POST['email'])) {
     }
 
     $email_message = "Form details below.\n\n";
-
-
 
     function clean_string($string) {
 
@@ -77,17 +62,11 @@ if(isset($_POST['email'])) {
 
     }
 
-
-
     $email_message .= "First Name: ".clean_string($first_name)."\n";
 
     $email_message .= "Email: ".clean_string($email_from)."\n";
 
     $email_message .= "Comments: ".clean_string($comments)."\n";
-
-
-
-
 
 // create email headers
 
@@ -101,15 +80,9 @@ if(isset($_POST['email'])) {
 
     ?>
 
-
-
     <!-- include your own success html here -->
 
-
-
     Merci de nous avoir contacté, nous vous répondrons dès que possible.
-
-
 
     <?php
 
