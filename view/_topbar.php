@@ -10,6 +10,7 @@
 						<a href="logout.php" class="btn">Déconnexion</a>
 						<a href="edit_image.php" class="btn">Mon profil</a>
 						<a href="contact.php" class="btn">Contact</a>
+						<a href="my_music.php" class="btn">Mes musiques</a>
 						<a href="add_music.php" class="btn"><i class="fa fa-plus"></i> Ajouter une musique</a>
 						<a href="https://www.facebook.com/groups/293834574317011/?fref=ts" target="_blank" class="btn"><i class="fa fa-facebook"></i></a>
 						<a href="https://twitter.com/soundcloud?lang=fr" target="_blank" class="btn"><i class="fa fa-twitter"></i></a>
