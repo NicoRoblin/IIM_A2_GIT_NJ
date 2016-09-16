@@ -107,6 +107,19 @@ SUMMARY
 		return $results;
 	}
 
+    function listMyMusics(PDO $db, $id){
+        $sql = "SELECT musics.* FROM musics WHERE user_id = :id ORDER BY musics.created_at DESC";
+
+        $req = $db->prepare($sql);
+        $req->execute(array(":id"=>$id));
+
+
+        $results = $req->fetchAll(PDO::FETCH_ASSOC);
+        
+
+        return $results;
+    }
+
 	/*1.4!selectMusic
 		return :
 			array
